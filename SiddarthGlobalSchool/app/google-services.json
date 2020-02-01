@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "241445981476",
+    "firebase_url": "https://sidhart-b84fa.firebaseio.com",
+    "project_id": "sidhart-b84fa",
+    "storage_bucket": "sidhart-b84fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241445981476:android:d3472ed4180035650cf7b1",
+        "android_client_info": {
+          "package_name": "com.siddarthglobalschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241445981476-4kga0ifo0si783ed3hb6110iun7672a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.siddarthglobalschool",
+            "certificate_hash": "cc7478c5ac3c90f8c40b34908306216578eda76b"
+          }
+        },
+        {
+          "client_id": "241445981476-m2cgc9klg24dd63visl388fgu632u6ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYd_0tXq4O8cg-Ev8wCHL1g2KqzOtf31c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241445981476-m2cgc9klg24dd63visl388fgu632u6ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

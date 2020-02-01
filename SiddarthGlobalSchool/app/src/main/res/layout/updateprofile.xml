@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+                ></ImageView>   <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Update Profile"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></TextView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@color/colorAccent"></ImageView>
+
+  <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_below="@id/iv_user"></TextView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/s"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"></de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="NAME"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Name"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="CLASS"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_class"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Class"
+            android:enabled="false"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="SECTION"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_section"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Section"
+            android:enabled="false"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="GENDER"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>     <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rd_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boy"></RadioButton>
+            <RadioButton
+                android:id="@+id/rd_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Girl"></RadioButton>
+        </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="DOB"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="DATE OF BIRTH"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="FATHER's NAME"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_father"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Father's Name"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="MOTHER's NAME"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_mother"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Mothers's Name"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="MOBILE"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_Mobile"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:inputType="number"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Mobile Number"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="EMAIL"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_Email"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email ID"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="ADDRESS"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Address"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="PIN CODE"
+                android:textStyle="bold"
+                   android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                ></TextView>   <EditText
+            android:id="@+id/tv_pin"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:hint="Enter Pin Code"
+            android:inputType="number"
+               android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            ></EditText>
+        </LinearLayout>
+<Button
+    android:id="@+id/but_submit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_margin="30dp"
+    android:textColor="@color/white"
+    android:text="Submit"></Button>
+    </LinearLayout>
+</ScrollView>
