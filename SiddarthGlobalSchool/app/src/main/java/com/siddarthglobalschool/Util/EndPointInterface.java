@@ -83,4 +83,11 @@ public interface EndPointInterface {
                                      @Field("doa") String doa);
 
 
+  @FormUrlEncoded
+    @POST("/schoolManagement/deviceTokenApi.php?")
+    Call<deviceResponse> deviceTokenApi(@Field("enrollment_no") String enrollment_no,
+                                     @Field("deviceId") String deviceId,
+                                     @Field("deviceToken") String deviceToken);
+
+
 }

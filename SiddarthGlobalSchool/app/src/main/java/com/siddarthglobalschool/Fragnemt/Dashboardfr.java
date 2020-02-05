@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 
+import android.telephony.TelephonyManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,10 @@ View view;
         pref = getActivity().getSharedPreferences("Login", Context.MODE_PRIVATE);
         editor = pref.edit();
         editor.putBoolean("Ishome", true).apply();
+        TelephonyManager telephonyManager = (TelephonyManager) getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+
+        UtilMethods.INSTANCE.deviceTokenApi(getActivity(), pref.getString("EnrollmentNo",""), telephonyManager.getDeviceId(), pref.getString("token", ""), null);
+
         String date = new SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(new Date());
         rv_profile=view.findViewById(R.id.rv_profile);
         rl_homework=view.findViewById(R.id.rl_homework);

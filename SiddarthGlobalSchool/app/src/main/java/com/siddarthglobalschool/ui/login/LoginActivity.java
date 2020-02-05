@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.siddarthglobalschool.R;
 import com.siddarthglobalschool.Util.CustomLoader;
+import com.siddarthglobalschool.Util.RequestUserPermission;
 import com.siddarthglobalschool.Util.UtilMethods;
 
 public class LoginActivity extends AppCompatActivity {
@@ -27,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+RequestUserPermission requestUserPermission=new RequestUserPermission(this);
+requestUserPermission.verifyStoragePermissions();
         usernameEditText = findViewById(R.id.username);
         passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);

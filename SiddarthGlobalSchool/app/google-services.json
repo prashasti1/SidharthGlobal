@@ -1,42 +1,71 @@
 {
   "project_info": {
-    "project_number": "241445981476",
-    "firebase_url": "https://sidhart-b84fa.firebaseio.com",
-    "project_id": "sidhart-b84fa",
-    "storage_bucket": "sidhart-b84fa.appspot.com"
+    "project_number": "752657547434",
+    "firebase_url": "https://event-2e5df.firebaseio.com",
+    "project_id": "event-2e5df",
+    "storage_bucket": "event-2e5df.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:241445981476:android:d3472ed4180035650cf7b1",
+        "mobilesdk_app_id": "1:752657547434:android:63ccbdd23013559cd490d3",
         "android_client_info": {
           "package_name": "com.siddarthglobalschool"
         }
       },
       "oauth_client": [
         {
-          "client_id": "241445981476-4kga0ifo0si783ed3hb6110iun7672a0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.siddarthglobalschool",
-            "certificate_hash": "cc7478c5ac3c90f8c40b34908306216578eda76b"
-          }
-        },
-        {
-          "client_id": "241445981476-m2cgc9klg24dd63visl388fgu632u6ph.apps.googleusercontent.com",
+          "client_id": "752657547434-954smksomp47p2ltidqb18po8c1f32th.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBYd_0tXq4O8cg-Ev8wCHL1g2KqzOtf31c"
+          "current_key": "AIzaSyD8HtwrnQ3r5D0a9rHH5Awy1PW5yVxUFIA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "241445981476-m2cgc9klg24dd63visl388fgu632u6ph.apps.googleusercontent.com",
+              "client_id": "752657547434-954smksomp47p2ltidqb18po8c1f32th.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752657547434:android:d321b25ea2c31f2d",
+        "android_client_info": {
+          "package_name": "eventmanadement.hb.com.eventmanadement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752657547434-2n2ct8rktkkvmbl5mjmlc3af0jim3gkr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eventmanadement.hb.com.eventmanadement",
+            "certificate_hash": "51400a7489c085b7ce160e18fb8e3db38b8d0001"
+          }
+        },
+        {
+          "client_id": "752657547434-954smksomp47p2ltidqb18po8c1f32th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8HtwrnQ3r5D0a9rHH5Awy1PW5yVxUFIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752657547434-954smksomp47p2ltidqb18po8c1f32th.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
